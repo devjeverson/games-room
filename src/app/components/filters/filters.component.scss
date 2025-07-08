@@ -1,0 +1,33 @@
+.filters {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background: #111;
+  border-bottom: 2px solid #0ff;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  label {
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  select {
+    background-color: #222;
+    color: #0ff;
+    border: 1px solid #0ff;
+    padding: 0.5rem 1rem;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 4px;
+
+    option {
+      background-color: #111;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px #0ff;
+    }
+  }
+}

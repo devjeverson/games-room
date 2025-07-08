@@ -1,0 +1,8 @@
+<app-filters 
+  (platformSelected)="filterByPlatform($event)" 
+  (genreSelected)="filterByGenre($event)">
+</app-filters>
+
+<div class="game-list">
+  <app-game-card *ngFor="let game of games" [game]="game"></app-game-card>
+</div>
